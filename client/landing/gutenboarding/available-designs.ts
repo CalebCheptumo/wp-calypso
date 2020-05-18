@@ -148,8 +148,8 @@ const availableDesigns: Readonly< AvailableDesigns > = {
 			theme: 'barnsbury',
 			src: 'https://public-api.wordpress.com/rest/v1/template/demo/barnsbury/barnsbury/',
 			fonts: {
-				headings: 'Playfair Display',
-				base: 'Fira Sans',
+				headings: 'Chivo',
+				base: 'Open Sans',
 			},
 			categories: [ 'featured', 'business' ],
 		},
