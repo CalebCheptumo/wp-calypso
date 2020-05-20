@@ -153,6 +153,18 @@ const availableDesigns: Readonly< AvailableDesigns > = {
 			},
 			categories: [ 'featured', 'business' ],
 		},
+		{
+			title: 'Twenty Twenty',
+			slug: 'twentytwenty',
+			template: 'twentytwenty',
+			theme: 'twentytwenty',
+			src: 'https://public-api.wordpress.com/rest/v1/template/demo/twentytwenty/twentytwenty/',
+			fonts: {
+				headings: 'Chivo',
+				base: 'Open Sans',
+			},
+			categories: [ 'featured', 'portfolio' ],
+		},
 	],
 };
 
