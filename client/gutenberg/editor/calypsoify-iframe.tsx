@@ -105,6 +105,7 @@ enum EditorActions {
 	LogError = 'logError',
 	GetGutenboardingStatus = 'getGutenboardingStatus',
 	GetNavSidebarLabels = 'getNavSidebarLabels',
+	GetCalypsoUrlInfo = 'getCalypsoUrlInfo',
 }
 
 class CalypsoifyIframe extends Component<
@@ -320,6 +321,13 @@ class CalypsoifyIframe extends Component<
 					page: translate( 'Create new page' ),
 					post: translate( 'Create new post' ),
 				},
+			} );
+		}
+
+		if ( EditorActions.GetCalypsoUrlInfo === action ) {
+			ports[ 0 ].postMessage( {
+				origin: window.location.origin,
+				siteSlug: this.props.siteSlug,
 			} );
 		}
 
